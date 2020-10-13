@@ -292,109 +292,108 @@ def exit_fun(event=None):
     except:
         return
 #exit command
-file.add_command(label="Exit",image=exit_icon,compound=tk.LEFT,accelerator="Ctrl+Z",command=exit_fun)
-
+file.add_command(label="Exit", image=exit_icon, compound=tk.LEFT, accelerator="Ctrl+Z", command=exit_fun)
 
 #edit commands adding functionality
 #find functionality
 def find_func(event=None):
     def find():
-        word=find_input.get()
-        text_editor.tag_remove("match",'1.0',tk.END)
-        matches=0
+        word = find_input.get()
+        text_editor.tag_remove("match", '1.0', tk.END)
+        matches = 0
         if word:
-            start_pos='1.0'
+            start_pos = '1.0'
             while True:
-                start_pos=text_editor.search(word,start_pos,stopindex=tk.END)
+                start_pos = text_editor.search(word, start_pos, stopindex=tk.END)
                 if not start_pos:
                     break
                 end_pos = f'{start_pos}+{len(word)}c'
-                text_editor.tag_add('match',start_pos,end_pos)
+                text_editor.tag_add('match', start_pos, end_pos)
                 matches += 1
                 start_pos = end_pos
-                text_editor.tag_config('match',foreground='red',background='yellow')
+                text_editor.tag_config('match', foreground='red', background='yellow')
             
     def replace():
         word=find_input.get()
         replace_content=replace_input.get()
-        content=text_editor.get(1.0,tk.END)
-        new_content=content.replace(word,replace_content)
-        text_editor.delete(1.0,tk.END)
-        text_editor.insert(1.0,new_content)
+        content=text_editor.get(1.0, tk.END)
+        new_content=content.replace(word, replace_content)
+        text_editor.delete(1.0, tk.END)
+        text_editor.insert(1.0, new_content)
 
     find_dialog=tk.Toplevel()
     find_dialog.geometry('450x250+500+200')
     find_dialog.title("Find")
-    find_dialog.resizable(0,0)
+    find_dialog.resizable(0, 0)
 
-    find_frame=ttk.Labelframe(find_dialog,text="Find/Replace")
+    find_frame=ttk.Labelframe(find_dialog, text="Find/Replace")
     find_frame.pack(pady=20)
 
     #labels
-    text_find_label=ttk.Label(find_frame,text="Find: ")
-    text_replace_label=ttk.Label(find_frame,text="Replace")
-    text_find_label.grid(row=0,column=0,padx=4,pady=4)
-    text_replace_label.grid(row=1,column=0,padx=4,pady=4)
+    text_find_label=ttk.Label(find_frame, text="Find: ")
+    text_replace_label=ttk.Label(find_frame, text="Replace")
+    text_find_label.grid(row=0, column=0, padx=4, pady=4)
+    text_replace_label.grid(row=1, column=0, padx=4, pady=4)
     #entry boxes
-    find_input=ttk.Entry(find_frame,width=30)
-    replace_input=ttk.Entry(find_frame,width=30)
-    find_input.grid(row=0,column=1,padx=4,pady=4)
-    replace_input.grid(row=1,column=1,padx=4,pady=4)
+    find_input=ttk.Entry(find_frame, width=30)
+    replace_input=ttk.Entry(find_frame, width=30)
+    find_input.grid(row=0, column=1, padx=4, pady=4)
+    replace_input.grid(row=1, column=1, padx=4, pady=4)
     #buttons
-    find_button=ttk.Button(find_frame,text="Find",command=find)
-    replace_button=ttk.Button(find_frame,text="Replace",command=replace)
-    find_button.grid(row=2,column=0,padx=4,pady=4)
-    replace_button.grid(row=2,column=1,padx=4,pady=4)
+    find_button=ttk.Button(find_frame, text="Find", command=find)
+    replace_button=ttk.Button(find_frame, text="Replace", command=replace)
+    find_button.grid(row=2, column=0, padx=4, pady=4)
+    replace_button.grid(row=2, column=1, padx=4, pady=4)
 
 
 
-edit.add_command(label="Copy",image=copy_icon,compound=tk.LEFT,accelerator="Ctrl+C",command=lambda:text_editor.event_generate("<Control c>"))
-edit.add_command(label="Paste",image=paste_icon,compound=tk.LEFT,accelerator="Ctrl+V",command=lambda:text_editor.event_generate("<Control v>"))
-edit.add_command(label="Cut",image=cut_icon,compound=tk.LEFT,accelerator="Ctrl+X",command=lambda:text_editor.event_generate("<Control x>"))
+edit.add_command(label="Copy",image=copy_icon,compound=tk.LEFT, accelerator="Ctrl+C", command=lambda:text_editor.event_generate("<Control c>"))
+edit.add_command(label="Paste",image=paste_icon,compound=tk.LEFT, accelerator="Ctrl+V", command=lambda:text_editor.event_generate("<Control v>"))
+edit.add_command(label="Cut", image=cut_icon, compound=tk.LEFT, accelerator="Ctrl+X", command=lambda:text_editor.event_generate("<Control x>"))
 edit.add_separator()
 
-edit.add_command(label="Find",image=find_icon,compound=tk.LEFT,accelerator="Ctrl+F",command=find_func)
+edit.add_command(label="Find", image=find_icon, compound=tk.LEFT, accelerator="Ctrl+F", command=find_func)
 
 #view checkbuttons
 
-show_toolbar=tk.BooleanVar()
+show_toolbar = tk.BooleanVar()
 show_toolbar.set(True)
-show_statusbar=tk.BooleanVar()
+show_statusbar = tk.BooleanVar()
 show_statusbar.set(True)
 
 def hide_toolbar():
     global show_toolbar
     if show_toolbar:
         tool_bar.pack_forget()
-        show_toolbar=False
+        show_toolbar = False
     else:
         text_editor.pack_forget()
         status_bar.pack_forget()
-        tool_bar.pack(side=tk.TOP,fill=tk.X)
-        text_editor.pack(fill=tk.BOTH,expand=True)
+        tool_bar.pack(side=tk.TOP, fill=tk.X)
+        text_editor.pack(fill=tk.BOTH, expand=True)
         status_bar.pack(side=tk.BOTTOM)
-        show_toolbar=True
+        show_toolbar = True
 
 def hide_statusbar():
     global show_statusbar
     if show_statusbar:
         status_bar.pack_forget()
-        show_statusbar=False
+        show_statusbar = False
     else:
         status_bar.pack(side=tk.BOTTOM)
-        show_statusbar=True
-
-view.add_checkbutton(label="Status Bar",onvalue=True,offvalue=False,variable=show_statusbar,image=status_bar_icon,compound=tk.LEFT,command=hide_statusbar)
-view.add_checkbutton(label="Tool bar",image=tool_bar_icon,onvalue=True,offvalue=False,variable=show_toolbar,compound=tk.LEFT,command=hide_toolbar)
+        show_statusbar = True
+ 
+view.add_checkbutton(label="Status Bar", onvalue=True, offvalue=False, variable=show_statusbar, image=status_bar_icon, compound=tk.LEFT,command=hide_statusbar)
+view.add_checkbutton(label="Tool bar", image=tool_bar_icon, onvalue=True, offvalue=False, variable=show_toolbar, compound=tk.LEFT, command=hide_toolbar)
 
 #color Theme
 def change_theme():
     chosen_theme = theme_choice.get()
     color_tuple = color_dict.get(chosen_theme)
-    fg_color , bg_color = color_tuple[0] ,color_tuple[1]
-    text_editor.config(background=bg_color,fg=fg_color)
+    fg_color, bg_color = color_tuple[0] ,color_tuple[1]
+    text_editor.config(background=bg_color, fg=fg_color)
 
-count=0
+count = 0
 for i in color_dict:
     color.add_radiobutton(label=i,image=color_icon[count],variable=theme_choice,compound=tk.LEFT,command=change_theme)
     count += 1
