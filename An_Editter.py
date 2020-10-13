@@ -1,32 +1,32 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import font,colorchooser,messagebox,filedialog
+from tkinter import font, colorchooser, messagebox, filedialog
 import os
-win=tk.Tk()
-win.title("An_Edittter")
+win = tk.Tk()
+win.title("An Editter")
 win.geometry("700x700")
 
 # ********************************************* Main Menu ************************************************
-main_menu=tk.Menu()
+main_menu = tk.Menu()
 
 #INSERTING IMAGES
-file=tk.Menu(main_menu,tearoff=False)
-new_icon=tk.PhotoImage(file="icons/new.png")
-open_icon=tk.PhotoImage(file="icons/open.png")
-save_icon=tk.PhotoImage(file="icons/save.png")
-save_as_icon=tk.PhotoImage(file="icons/save_as.png")
-exit_icon=tk.PhotoImage(file="icons/exit.png")
+file = tk.Menu(main_menu,tearoff=False)
+new_icon = tk.PhotoImage(file="icons/new.png")
+open_icon = tk.PhotoImage(file="icons/open.png")
+save_icon = tk.PhotoImage(file="icons/save.png")
+save_as_icon = tk.PhotoImage(file="icons/save_as.png")
+exit_icon = tk.PhotoImage(file="icons/exit.png")
 
 
-edit=tk.Menu(main_menu,tearoff=False)
-copy_icon=tk.PhotoImage(file="icons/copy.png")
-paste_icon=tk.PhotoImage(file="icons/paste.png")
-cut_icon=tk.PhotoImage(file="icons/cut.png")
-find_icon=tk.PhotoImage(file="icons/find.png")
+edit = tk.Menu(main_menu,tearoff=False)
+copy_icon = tk.PhotoImage(file="icons/copy.png")
+paste_icon = tk.PhotoImage(file="icons/paste.png")
+cut_icon = tk.PhotoImage(file="icons/cut.png")
+find_icon = tk.PhotoImage(file="icons/find.png")
 
-view=tk.Menu(main_menu,tearoff=False)
-tool_bar_icon=tk.PhotoImage(file="icons/tool_bar.png")
-status_bar_icon=tk.PhotoImage(file="icons/status_bar.png")
+view = tk.Menu(main_menu,tearoff=False)
+tool_bar_icon = tk.PhotoImage(file="icons/tool_bar.png")
+status_bar_icon = tk.PhotoImage(file="icons/status_bar.png")
 
 
 color=tk.Menu(main_menu,tearoff=False)
