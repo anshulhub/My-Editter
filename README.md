@@ -49,7 +49,7 @@ Screenshot of the "Files" menu 👇
 
 
 
-![](icons/EditterFiles.JPG)
+![](images/EditterFiles.JPG)
 
 ## Edit
 This menu can be accessed by clicking on the "Edit" item on the topmost bar.
@@ -70,9 +70,9 @@ Screenshot of the "Edit" menu 👇
 
 
 
-![](icons/EditterEdit.JPG)
+![](images/EditterEdit.JPG)
 
-![](icons/EditterEditFind.JPG)
+![](images/EditterEditFind.JPG)
 
 ## View
 This menu can be accessed by clicking on the "View" item on the topmost bar.
@@ -91,7 +91,7 @@ Screenshot of the "View" menu 👇
 
 
 
-![](icons/EditterView.JPG)
+![](images/EditterView.JPG)
 
 ## Colors
 This menu can be accessed by clicking on the "Colors" item on the topmost bar.
@@ -109,7 +109,7 @@ Screenshot of the "Colors" menu 👇
 
 
 
-![](icons/EditterColors.JPG)
+![](images/EditterColors.JPG)
 
 ## Tool Bar Options
 The Tool Bar contains options to change the text in the Editter. To ensure the Tool Bar is shown, make sure that the "Tool Bar" option in the "View" menu is selected.
@@ -118,51 +118,51 @@ The Tool Bar contains options to change the text in the Editter. To ensure the T
 
 Screenshot of the "Font Selection" 👇
 
-![](icons/EditterFont.JPG)
+![](images/EditterFont.JPG)
 
 - The font size of the text can also be changed from the size selection.
 
 Screenshot of the "Size Selection" 👇
 
-![](icons/EditterFontSize.JPG)
+![](images/EditterFontSize.JPG)
 
 - The font styling of the text, including Bold, Italic and Underlined can be set from these buttons.
 
 Screenshot of the "Bold Button" 👇
 
-![](icons/EditterStylingBold.JPG)
+![](images/EditterStylingBold.JPG)
 
 Screenshot of the "Italic Button" 👇
 
-![](icons/EditterStylingItalic.JPG)
+![](images/EditterStylingItalic.JPG)
 
 Screenshot of the "Underlined Button" 👇
 
-![](icons/EditterStylingUnderlined.JPG)
+![](images/EditterStylingUnderlined.JPG)
 
 - The color of the text can be changed by selecting the Color Picker. A window with a full color picker will appear and the font color can be chosen.
 
 Screenshot of the "Color Picker" 👇
 
-![](icons/EditterColorPicker.JPG)
+![](images/EditterColorPicker.JPG)
 
 - The alignment of the text, including Left, Center and Right can be set from these buttons.
 
 Screenshot of the "Left Button" 👇
 
-![](icons/EditterStylingLeft.JPG)
+![](images/EditterStylingLeft.JPG)
 
 Screenshot of the "Center Button" 👇
 
-![](icons/EditterStylingCenter.JPG)
+![](images/EditterStylingCenter.JPG)
 
 Screenshot of the "Right Button" 👇
 
-![](icons/EditterStylingRight.JPG)
+![](images/EditterStylingRight.JPG)
 
 ## Status Bar
 The status bar shows the number of characters and words written in the Editter in total.
 
 Screenshot of the "Status Bar" 👇
 
-![](icons/EditterStatusBar.JPG)
+![](images/EditterStatusBar.JPG)
