@@ -1,29 +1,8 @@
 # My-Editter
-Editter is a clone of the very famous Text-Editor, Microsoft Office WORD.
-It is created using the tkinter module and I have created various types of functions in it like making text bold,italic, underline, changing colors, and performing various operations on data like saving file ,opening documents, creating new documents. Editter also contains scroll bar, word and character counts.
+Editter is a clone of the very famous text editor Microsoft Word.
+It is created using the Tkinter module and I have created various types of functions in it like making text bold, italic, underlined, changing colors, and performing various operations on data like saving file ,opening documents, creating new documents. Editter also contains scroll bar, word and character counts.
 
-
-
-
-
-
-
-
-
-
-
-
-Here is the Screenshot 👇
-
-
-
-
-
-
-
-
-
-
+Here is a screenshot:  
 
 ![](icons/Editter.PNG)
 
@@ -33,21 +12,11 @@ Here is the Screenshot 👇
 This menu can be accessed by clicking on the "Files" item on the topmost bar.
 - To create a new file, select the "New" option.
 - To open an existing file, select the "Open" option.
-- To save whatever has been written in the Editter, select the "Save" option.
-- To save whatever has been written in the Editter to a new file, select the "Save As" option.
+- To save whatever has been written the Editter, select the "Save" option.
+- To save whatever has been written the Editter to a new file, select the "Save As" option.
 - To exit Editter, select the "Exit" option.
 
-Screenshot of the "Files" menu 👇
-
-
-
-
-
-
-
-
-
-
+Here is a screenshot of the "Files" menu:
 
 ![](images/EditterFiles.JPG)
 
@@ -58,17 +27,7 @@ This menu can be accessed by clicking on the "Edit" item on the topmost bar.
 - To cut selected text, select the "Cut" option.
 - To find or replace specific text, select the "Find" option. A new window will appear with the "Find" and "Replace" field to find specified text and replace them the text provided.
 
-Screenshot of the "Edit" menu 👇
-
-
-
-
-
-
-
-
-
-
+Here is a screenshot of the "Edit" menu:
 
 ![](images/EditterEdit.JPG)
 
@@ -79,17 +38,7 @@ This menu can be accessed by clicking on the "View" item on the topmost bar.
 - To show/hide the Status Bar, select the "Status Bar" option. A tick will represent if the "Status Bar" is shown or hidden.
 - To show/hide the Tool Bar, select the "Tool Bar" option. A tick will represent if the "Tool Bar" is shown or hidden.
 
-Screenshot of the "View" menu 👇
-
-
-
-
-
-
-
-
-
-
+Here is a screenshot of the "View" menu:
 
 ![](images/EditterView.JPG)
 
@@ -97,17 +46,7 @@ Screenshot of the "View" menu 👇
 This menu can be accessed by clicking on the "Colors" item on the topmost bar.
 - To change the color theme of the Editter, select the color from the menu. A tick will represent the selected color.
 
-Screenshot of the "Colors" menu 👇
-
-
-
-
-
-
-
-
-
-
+Here is a screenshot of the "Colors" menu:
 
 ![](images/EditterColors.JPG)
 
@@ -116,53 +55,53 @@ The Tool Bar contains options to change the text in the Editter. To ensure the T
 
 - The font of the text in the Editter can be changed from the font selection.
 
-Screenshot of the "Font Selection" 👇
+Here is a screenshot of the font selection menu:
 
 ![](images/EditterFont.JPG)
 
 - The font size of the text can also be changed from the size selection.
 
-Screenshot of the "Size Selection" 👇
+Here is a screenshot of the size selection menu:
 
 ![](images/EditterFontSize.JPG)
 
 - The font styling of the text, including Bold, Italic and Underlined can be set from these buttons.
 
-Screenshot of the "Bold Button" 👇
+Here is a screenshot of the "Bold" button:
 
 ![](images/EditterStylingBold.JPG)
 
-Screenshot of the "Italic Button" 👇
+Here is a screenshot of the "Italic" button:
 
 ![](images/EditterStylingItalic.JPG)
 
-Screenshot of the "Underlined Button" 👇
+Here is a screenshot of the "Underline" button:
 
 ![](images/EditterStylingUnderlined.JPG)
 
 - The color of the text can be changed by selecting the Color Picker. A window with a full color picker will appear and the font color can be chosen.
 
-Screenshot of the "Color Picker" 👇
+Here is a screenshot of the color picker:
 
 ![](images/EditterColorPicker.JPG)
 
-- The alignment of the text, including Left, Center and Right can be set from these buttons.
+- The justification (alignment) of the text, including Left, Center and Right can be set from these buttons.
 
-Screenshot of the "Left Button" 👇
+Here is a screenshot of the "Left" justify button:
 
 ![](images/EditterStylingLeft.JPG)
 
-Screenshot of the "Center Button" 👇
+Here is a screenshot of the "Center" justify button:
 
 ![](images/EditterStylingCenter.JPG)
 
-Screenshot of the "Right Button" 👇
+Here is a screenshot of the "Right" justify button:
 
 ![](images/EditterStylingRight.JPG)
 
 ## Status Bar
 The status bar shows the number of characters and words written in the Editter in total.
 
-Screenshot of the "Status Bar" 👇
+Here is a screenshot of the status bar:
 
 ![](images/EditterStatusBar.JPG)
