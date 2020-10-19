@@ -168,4 +168,4 @@ Screenshot of the "Status Bar" 👇
 ![](images/EditterStatusBar.JPG)
 
 # License
-This uses the [MIT License](LICENSE)
+This uses the [MIT License](LICENSE).
