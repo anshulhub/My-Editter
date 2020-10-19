@@ -27,6 +27,9 @@ Here is the Screenshot 👇
 
 ![](icons/Editter.PNG)
 
+# License
+This uses the [MIT License](LICENSE).
+
 # Features
 
 ## Files
@@ -166,6 +169,3 @@ The status bar shows the number of characters and words written in the Editter i
 Screenshot of the "Status Bar" 👇
 
 ![](images/EditterStatusBar.JPG)
-
-# License
-This uses the [MIT License](LICENSE).
