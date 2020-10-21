@@ -6,9 +6,6 @@ Here is a screenshot:
 
 ![](icons/Editter.PNG)
 
-# License
-This uses the [MIT License](LICENSE).
-
 # Features
 
 ## Files
