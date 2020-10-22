@@ -2,12 +2,12 @@
 Editter is a clone of the very famous text editor Microsoft Word.
 It is created using the Tkinter module and I have created various types of functions in it like making text bold, italic, underlined, changing colors, and performing various operations on data like saving file ,opening documents, creating new documents. Editter also contains scroll bar, word and character counts.
 
-Here is a screenshot:  
+Here is a screenshot :  
 
 ![](icons/Editter.PNG)
 
 # License
-This uses the [MIT License](LICENSE).
+This uses the [MIT License](LICENSE) for fair use purpose.
 
 # Features
 
